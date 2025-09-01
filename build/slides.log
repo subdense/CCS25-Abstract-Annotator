@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  31 AUG 2025 15:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.6)  1 SEP 2025 07:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1280,7 +1280,7 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 233.
  <./figures/buildingchange_2.png>]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 246.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 252.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
 [6
@@ -1288,70 +1288,110 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 246.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 271.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 278.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [7
 
 ]
-File: figures/logoENSG_small.jpg Graphic file (type jpg)
-<use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 288.
-(pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
- [8
-
-]
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
+304.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
+File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+<figures/annotator.png, id=104, 1857.94125pt x 817.0525pt>
+File: figures/annotator.png Graphic file (type png)
+<use figures/annotator.png>
+Package pdftex.def Info: figures/annotator.png  used on input line 304.
+(pdftex.def)             Requested size: 307.28987pt x 135.13199pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
 Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 304.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
- [9
 
-]
+Overfull \vbox (39.09299pt too high) detected at line 304
+ []
+
+[8
+
+ <./figures/annotator.png>]
+<figures/example_dortmund_nochange_stage1.png, id=112, 1860.9525pt x 718.685pt>
+
+File: figures/example_dortmund_nochange_stage1.png Graphic file (type png)
+<use figures/example_dortmund_nochange_stage1.png>
+Package pdftex.def Info: figures/example_dortmund_nochange_stage1.png  used on 
+input line 332.
+(pdftex.def)             Requested size: 199.73653pt x 77.13649pt.
+<figures/example_dortmund_nochange_stage2.png, id=113, 1860.9525pt x 718.685pt>
+
+File: figures/example_dortmund_nochange_stage2.png Graphic file (type png)
+<use figures/example_dortmund_nochange_stage2.png>
+Package pdftex.def Info: figures/example_dortmund_nochange_stage2.png  used on 
+input line 332.
+(pdftex.def)             Requested size: 199.73653pt x 77.13649pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 311.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 332.
+(pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
+
+Overfull \vbox (20.26358pt too high) detected at line 332
+ []
+
+[9
+
+ <./figures/example_dortmund_nochange_stage1.png> <./figures/example_dortmund_n
+ochange_stage2.png>]
+<figures/example_annotatordashboard.png, id=121, 1860.9525pt x 834.11626pt>
+File: figures/example_annotatordashboard.png Graphic file (type png)
+<use figures/example_annotatordashboard.png>
+Package pdftex.def Info: figures/example_annotatordashboard.png  used on input 
+line 342.
+(pdftex.def)             Requested size: 307.28987pt x 137.72507pt.
+File: figures/logoENSG_small.jpg Graphic file (type jpg)
+<use figures/logoENSG_small.jpg>
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 342.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [10
 
-]
+ <./figures/example_annotatordashboard.png>]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 324.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 355.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [11
 
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 337.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 368.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
- [12
+
+[12
 
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 350.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 381.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [13
 
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 393.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 427.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [14
 
 ] (build/slides.bbl)
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [15
 
  </usr/local/texlive/2021/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [16
 
@@ -1359,7 +1399,7 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [17
 
@@ -1367,16 +1407,15 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
-
-[18
+ [18
 
 
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [19
 
@@ -1384,7 +1423,7 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [20
 
@@ -1392,7 +1431,7 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [21
 
@@ -1400,7 +1439,7 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [22
 
@@ -1408,7 +1447,7 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 440.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [23
 
@@ -1416,187 +1455,183 @@ Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 406.
 ]
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 421.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 455.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
- [24
+
+[24
 
 ]
-<figures/subdense.png, id=200, 606.265pt x 225.84375pt>
+<figures/subdense.png, id=214, 606.265pt x 225.84375pt>
 File: figures/subdense.png Graphic file (type png)
 <use figures/subdense.png>
-Package pdftex.def Info: figures/subdense.png  used on input line 450.
+Package pdftex.def Info: figures/subdense.png  used on input line 484.
 (pdftex.def)             Requested size: 131.6673pt x 49.04779pt.
 
-Overfull \hbox (8.75323pt too wide) in paragraph at lines 450--450
+Overfull \hbox (8.75323pt too wide) in paragraph at lines 484--484
 [][]  
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-450.
-(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmss.fd
-File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<figures/logos.png, id=201, 895.345pt x 99.37125pt>
+<figures/logos.png, id=215, 895.345pt x 99.37125pt>
 File: figures/logos.png Graphic file (type png)
 <use figures/logos.png>
-Package pdftex.def Info: figures/logos.png  used on input line 450.
+Package pdftex.def Info: figures/logos.png  used on input line 484.
 (pdftex.def)             Requested size: 220.98038pt x 24.52577pt.
-<figures/tud.png, id=202, 263.98625pt x 106.3975pt>
+<figures/tud.png, id=216, 263.98625pt x 106.3975pt>
 File: figures/tud.png Graphic file (type png)
 <use figures/tud.png>
-Package pdftex.def Info: figures/tud.png  used on input line 450.
+Package pdftex.def Info: figures/tud.png  used on input line 484.
 (pdftex.def)             Requested size: 60.84848pt x 24.52577pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 450.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 484.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
- [25
+[25
 
  <./figures/subdense.png> <./figures/logos.png> <./figures/tud.png>]
-<figures/GMoA_1.png, id=213, 403.5075pt x 339.2675pt>
+<figures/GMoA_1.png, id=227, 403.5075pt x 339.2675pt>
 File: figures/GMoA_1.png Graphic file (type png)
 <use figures/GMoA_1.png>
-Package pdftex.def Info: figures/GMoA_1.png  used on input line 487.
+Package pdftex.def Info: figures/GMoA_1.png  used on input line 521.
 (pdftex.def)             Requested size: 122.91406pt x 103.34442pt.
-<figures/GMoA_2.png, id=214, 320.19624pt x 133.49875pt>
+<figures/GMoA_2.png, id=228, 320.19624pt x 133.49875pt>
 File: figures/GMoA_2.png Graphic file (type png)
 <use figures/GMoA_2.png>
-Package pdftex.def Info: figures/GMoA_2.png  used on input line 487.
+Package pdftex.def Info: figures/GMoA_2.png  used on input line 521.
 (pdftex.def)             Requested size: 122.91406pt x 51.2454pt.
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
-87.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
+21.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 487.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 521.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
-Overfull \vbox (14.18687pt too high) detected at line 487
+Overfull \vbox (14.18687pt too high) detected at line 521
  []
 
 [26
 
  <./figures/GMoA_1.png> <./figures/GMoA_2.png>]
-<figures/change.png, id=227, 1057.9525pt x 437.635pt>
+<figures/change.png, id=241, 1057.9525pt x 437.635pt>
 File: figures/change.png Graphic file (type png)
 <use figures/change.png>
-Package pdftex.def Info: figures/change.png  used on input line 502.
+Package pdftex.def Info: figures/change.png  used on input line 536.
 (pdftex.def)             Requested size: 307.28987pt x 127.11122pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 502.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 536.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
-Overfull \vbox (1.76553pt too high) detected at line 502
+Overfull \vbox (1.76553pt too high) detected at line 536
  []
 
 [27
 
  <./figures/change.png>]
-<figures/buildingchange_gmoa.png, id=237, 907.39pt x 304.13625pt>
+<figures/buildingchange_gmoa.png, id=251, 907.39pt x 304.13625pt>
 File: figures/buildingchange_gmoa.png Graphic file (type png)
 <use figures/buildingchange_gmoa.png>
-Package pdftex.def Info: figures/buildingchange_gmoa.png  used on input line 51
-8.
+Package pdftex.def Info: figures/buildingchange_gmoa.png  used on input line 55
+2.
 (pdftex.def)             Requested size: 307.28987pt x 102.99657pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 518.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 552.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [28
 
  <./figures/buildingchange_gmoa.png>]
-<figures/mca.png, id=245, 1209.51875pt x 424.58624pt>
+<figures/mca.png, id=259, 1209.51875pt x 424.58624pt>
 File: figures/mca.png Graphic file (type png)
 <use figures/mca.png>
-Package pdftex.def Info: figures/mca.png  used on input line 533.
+Package pdftex.def Info: figures/mca.png  used on input line 567.
 (pdftex.def)             Requested size: 307.28987pt x 107.86961pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 533.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 567.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [29
 
  <./figures/mca.png>]
-<figures/benchmark.png, id=254, 887.315pt x 342.27875pt>
+<figures/benchmark.png, id=268, 887.315pt x 342.27875pt>
 File: figures/benchmark.png Graphic file (type png)
 <use figures/benchmark.png>
-Package pdftex.def Info: figures/benchmark.png  used on input line 560.
+Package pdftex.def Info: figures/benchmark.png  used on input line 594.
 (pdftex.def)             Requested size: 307.28987pt x 118.53545pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 560.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 594.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
-Overfull \vbox (21.55556pt too high) detected at line 560
+Overfull \vbox (21.55556pt too high) detected at line 594
  []
 
 [30
 
  <./figures/benchmark.png>]
-<figures/algo.png, id=262, 578.16pt x 555.07375pt>
+<figures/algo.png, id=276, 578.16pt x 555.07375pt>
 File: figures/algo.png Graphic file (type png)
 <use figures/algo.png>
-Package pdftex.def Info: figures/algo.png  used on input line 578.
+Package pdftex.def Info: figures/algo.png  used on input line 612.
 (pdftex.def)             Requested size: 184.3758pt x 177.00893pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 578.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 612.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
-Overfull \vbox (14.22014pt too high) detected at line 578
+Overfull \vbox (14.22014pt too high) detected at line 612
  []
 
 [31
 
  <./figures/algo.png>]
-<figures/result_algo.png, id=271, 1220.56pt x 723.70375pt>
+<figures/result_algo.png, id=285, 1220.56pt x 723.70375pt>
 File: figures/result_algo.png Graphic file (type png)
 <use figures/result_algo.png>
-Package pdftex.def Info: figures/result_algo.png  used on input line 597.
+Package pdftex.def Info: figures/result_algo.png  used on input line 631.
 (pdftex.def)             Requested size: 307.28987pt x 182.1954pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 597.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 631.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
-Overfull \vbox (25.87404pt too high) detected at line 597
+Overfull \vbox (25.87404pt too high) detected at line 631
  []
 
 [32
 
  <./figures/result_algo.png>]
-<figures/synthdata_1.png, id=279, 788.9475pt x 583.17876pt>
+<figures/synthdata_1.png, id=293, 788.9475pt x 583.17876pt>
 File: figures/synthdata_1.png Graphic file (type png)
 <use figures/synthdata_1.png>
-Package pdftex.def Info: figures/synthdata_1.png  used on input line 617.
+Package pdftex.def Info: figures/synthdata_1.png  used on input line 651.
 (pdftex.def)             Requested size: 193.59412pt x 143.09805pt.
-<figures/synthdata_2.png, id=280, 449.68pt x 757.83125pt>
+<figures/synthdata_2.png, id=294, 449.68pt x 757.83125pt>
 File: figures/synthdata_2.png Graphic file (type png)
 <use figures/synthdata_2.png>
-Package pdftex.def Info: figures/synthdata_2.png  used on input line 617.
+Package pdftex.def Info: figures/synthdata_2.png  used on input line 651.
 (pdftex.def)             Requested size: 82.96957pt x 139.82655pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 617.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 651.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
  [33
 
  <./figures/synthdata_1.png> <./figures/synthdata_2.png>]
-<figures/synthdata_calib.png, id=289, 986.68625pt x 745.78625pt>
+<figures/synthdata_calib.png, id=303, 986.68625pt x 745.78625pt>
 File: figures/synthdata_calib.png Graphic file (type png)
 <use figures/synthdata_calib.png>
-Package pdftex.def Info: figures/synthdata_calib.png  used on input line 635.
+Package pdftex.def Info: figures/synthdata_calib.png  used on input line 669.
 (pdftex.def)             Requested size: 230.46739pt x 174.1901pt.
 File: figures/logoENSG_small.jpg Graphic file (type jpg)
 <use figures/logoENSG_small.jpg>
-Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 635.
+Package pdftex.def Info: figures/logoENSG_small.jpg  used on input line 669.
 (pdftex.def)             Requested size: 44.96564pt x 21.99463pt.
 
-Overfull \vbox (24.05124pt too high) detected at line 635
+Overfull \vbox (24.05124pt too high) detected at line 669
  []
 
 [34
@@ -1619,11 +1654,11 @@ Package rerunfilecheck Info: File `slides.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29063 strings out of 478353
- 582802 string characters out of 5848101
- 817205 words of memory out of 5000000
- 46453 multiletter control sequences out of 15000+600000
- 433697 words of font info for 102 fonts, out of 8000000 for 9000
+ 29098 strings out of 478353
+ 584030 string characters out of 5848101
+ 818261 words of memory out of 5000000
+ 46482 multiletter control sequences out of 15000+600000
+ 434039 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,13n,127p,1888b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1647,10 +1682,10 @@ mf-dist/fonts/type1/public/cm-super/sfsx1200.pfb></usr/local/texlive/2021/texmf
 ist/fonts/type1/public/cm-super/sfsx2488.pfb></usr/local/texlive/2021/texmf-dis
 t/fonts/type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2021/texmf-dist/
 fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on build/slides.pdf (34 pages, 3840228 bytes).
+Output written on build/slides.pdf (34 pages, 12519217 bytes).
 PDF statistics:
- 401 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 85 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

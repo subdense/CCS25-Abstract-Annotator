@@ -12,45 +12,45 @@ Repeated entry---line 184 of file biblio.bib
  :                                       ,
 I'm skipping whatever remains of this entry
 Warning--there's a number but no volume in olteanu2015knowledge
-You've used 16 entries,
+You've used 17 entries,
             1935 wiz_defined-function locations,
-            566 strings with 7448 characters,
-and the built_in function-call counts, 6721 in all, are:
-= -- 645
-> -- 315
-< -- 9
-+ -- 115
-- -- 108
-* -- 557
-:= -- 1166
-add.period$ -- 49
-call.type$ -- 16
-change.case$ -- 133
-chr.to.int$ -- 15
-cite$ -- 17
-duplicate$ -- 267
-empty$ -- 457
-format.name$ -- 128
-if$ -- 1317
+            573 strings with 7625 characters,
+and the built_in function-call counts, 7174 in all, are:
+= -- 693
+> -- 328
+< -- 10
++ -- 119
+- -- 112
+* -- 597
+:= -- 1240
+add.period$ -- 52
+call.type$ -- 17
+change.case$ -- 140
+chr.to.int$ -- 16
+cite$ -- 18
+duplicate$ -- 281
+empty$ -- 492
+format.name$ -- 135
+if$ -- 1407
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 83
-num.names$ -- 48
-pop$ -- 150
+missing$ -- 17
+newline$ -- 88
+num.names$ -- 51
+pop$ -- 154
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 141
 quote$ -- 0
-skip$ -- 182
+skip$ -- 193
 stack$ -- 0
-substring$ -- 396
-swap$ -- 41
+substring$ -- 451
+swap$ -- 42
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 92
+type$ -- 98
 warning$ -- 1
-while$ -- 51
+while$ -- 55
 width$ -- 0
-write$ -- 206
+write$ -- 219
 (There were 2 error messages)

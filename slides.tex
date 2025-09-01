@@ -33,7 +33,7 @@
 %  - [for cases 1-m construction side to a 0-1]: actual construction! -> very important case which should be well characterised ; should extend intersection buffer, and in complex cases ask the user to draw links? ("other" includes these cases in theory, but then we miss these)
 %  - cases n*1-1 : propose links par default a modifier? ce cas au moins? (cf Germany, data identique, pas vraiment m-n)
 %  - modif de polygones a activer -> aussi annotation pour ML raster (et multimodal vecteur-raster?)
-
+%  - Q : handling of multipolygons? [splitted before generating datasets? needs to be checked!]
 
 
 
@@ -237,16 +237,23 @@ $\rightarrow$ Need for a consistent, despite various GIS data qualities across c
 
 % Raster data such as aerial imagery, on which machine learning methods provide a good performance for land-use change for example \cite{khelifi2020deep}, is not sufficient for that purpose, and change detection must be performed on vector data of building geometries. To that purpose, geospatial vector data matching algorithms are an efficient tool \cite{xavier2016survey}, with the advantage of being robust to spatial noise in geometries and changes in data specifications. They however require some extensive parametrisation and provide varying performances \cite{guardiola2024optimising}.
 
+%\justify
 
+$\rightarrow$ Machine Learning on remote sensing raster data had improved performance in recent years, but remains not robust enough in terms of quality and resolution for that particular purpose \cite{khelifi2020deep}
 
+\medskip
 
 $\rightarrow$ Geospatial vector data matching algorithms as a method for change detection \cite{xavier2016survey}, applied to linear data \cite{costes2015aggregated} and polygonal data \cite{gregory2007historical}.
 
+\medskip
+
+$\rightarrow$ A new algorithm combining Geometric Matching of Areas \cite{belhadjali:tel-03244834} with Multi-criteria Matching \cite{olteanu2015knowledge} presented at CCS last year \cite{guardiola2024optimising}.
 
 \end{frame}
 
 
 \sframe{Research objective}{
+
 
 
 %An important issue for optimising this type of algorithms is the lack of ground-truth datasets with a large enough size and diversity. We propose in this contribution to tackle this issue, for the specific case of building change detection.
@@ -255,17 +262,17 @@ $\rightarrow$ Geospatial vector data matching algorithms as a method for change 
 
 
 
+$\rightarrow$ Vector Matching algorithm require extensive parametrisation and optimisation, and provide varying performances in different context.
 
 \medskip
 
-$\rightarrow$ Several algorithms which have been developed and tested for different application (change detection, data quality) and different contexts, with meta-parameters for each.
-
+$\rightarrow$ Need for large and specific ground-truth datasets (building layers annotated with expected links).
 
 \bigskip
 
-\textbf{Research objective: }
+\textbf{Research objective:}
 
-\textit{Which algorithm and parametrisation are optimal to detect true building changes, across the three case study countries and the various urban contexts within the study areas?}
+\textit{Design and develop a web application designed to annotate potential matching links between two vector dataset.}
 
 
 }
@@ -276,12 +283,21 @@ $\rightarrow$ Several algorithms which have been developed and tested for differ
 
 % Its main functionalities are that (i) it is fully based on git and javascript, requiring no database nor advanced web server deployment, and can be automatically deployed through github pages for example; (ii) it manages multi-user collaboration, with authentication linked to rights granted for the project git repository (implemented only for github for now); (iii) provides a dashboard with the user progress and the overall progress on all datasets displayed on maps; (iv) it allows collaborators annotating two vector datasets at two different dates, with aerial photographs being provided in the background for ground-truthing.
 
+\footnotesize
+
+\begin{itemize}
+	\item fully based on git and javascript: no database nor server management, automatically deployed through github pages
+	\item handles multi-user collaboration, with authentication given by writing rights on the git repository
+	\item provides a dashboard to summarise user progress and overall progress
+	\item allows annotation of two vector datasets, with aerial photographs being provided in the background for ground-truthing
+\end{itemize}
+
+\smallskip
 
 
-%\begin{center}
-%  \includegraphics[width=\linewidth]{figures/annotator.png}
-%\end{center}
-% Online standalone javascript app (deployed automatically via github pages) to annotate potential matching links (what link should be obtained; which real-world change), developped by Julien Perret (\url{https://github.com/subdense/annotate})
+\begin{center}
+  \includegraphics[width=\linewidth]{figures/annotator.png}
+\end{center}
 
 
 
@@ -292,12 +308,24 @@ $\rightarrow$ Several algorithms which have been developed and tested for differ
 
 %The annotation is sequential on potential matching links (intersecting features between the two datasets), and the user must ground-truth first the type of link the algorithm should detect (no link, single, multiple), then the type of real world evolution (parametrised for building changes in our case), and can also highlight and comment data quality issues. 
 
-
-
 %  \includegraphics[width=\textwidth]{figures/example_annotate_2025-03-20_22-27-20.png}
-%  \caption{Screenshot of the annotation web application. On the top the user can access the different tabs, such as the dashboard with the annotation progress on the tasks ths user was assigned, or global maps showing progress across all users and datasets in space. The main tab to annotate shows two aerial photographs of the same place at the two compared dates, with the vector features at each date surimposed. In this particular case, there seems to be no change in the real world, but the polygon data for buildings significantly changed. The user first provides the type of link, and then (shown in the screenshot) the type of real world building change (no change, construction, destruction, reconstruction, does not know), and can comment on a data quality issue. Note that aerial photographs are in some rare cases not enough to ground-truth change, thus the option to skip the step. Once clicking ``save'', the next unit to annotate will be displayed. The application is currently parametrised for building change, but vector data sources, aerial imagery sources, and change labels can all be customised in a configuration file, and thus can be changed for other types of features, such as land plots or road networks.}
+%  \caption{Screenshot of the annotation web application. On the top the user can access the different tabs, such as the dashboard with the annotation progress on the tasks ths user was assigned, or global maps showing progress across all users and datasets in space. The main tab to annotate shows two aerial photographs of the same place at the two compared dates, with the vector features at each date surimposed. In this particular case, there seems to be no change in the real world, but the polygon data for buildings significantly changed. The user first provides the type of link, and then (shown in the screenshot) the type of real world building change (no change, construction, destruction, reconstruction, does not know), and can comment on a data quality issue. Note that aerial photographs are in some rare cases not enough to ground-truth change, thus the option to skip the step. Once clicking ``save'', the next unit to annotate will be displayed.}
 
+\footnotesize
 
+\begin{center}
+  \includegraphics[width=0.65\linewidth]{figures/example_dortmund_nochange_stage1.png}
+\end{center}
+
+\textbf{Stage 1:} type of matching link (1-1, 0-1, 1-0, 1-m, n-1, n-m).
+
+\smallskip
+
+\begin{center}
+  \includegraphics[width=0.65\linewidth]{figures/example_dortmund_nochange_stage2.png}
+\end{center}
+
+\textbf{Stage 1:} type of real word evolution (no change, construction, destruction, reconstruction, don't know), signal a quality issue and comment.
 
 
 
@@ -307,6 +335,9 @@ $\rightarrow$ Several algorithms which have been developed and tested for differ
 
 \begin{frame}{Dashboard and maps to monitor progress}
 
+\begin{center}
+	\includegraphics[width=\linewidth]{figures/example_annotatordashboard.png}
+\end{center}
 
 \end{frame}
 
@@ -337,7 +368,7 @@ $\rightarrow$ Several algorithms which have been developed and tested for differ
 \end{frame}
 
 
-\begin{frame}{Work in progress: application to algorithm optimisation}
+\begin{frame}{Work in progress: algorithm optimisation}
 
 %First results to optimise algorithms (in the sense of F-score for real-world change prediction) with partial ground-truth datasets were obtained for the same algorithms studied by \cite{guardiola2024optimising} (the Multi-criteria matching algorithm and the Geometric Matching of Areas algorithm), and confirm previous results obtained with synthetic data, in particular that (i) each algorithm can be optimised to better perform in different urban form typologies (center, housing projects, suburbs); (ii) they can be combined into a multi-modelling approach for a better overall performance.
 
@@ -386,7 +417,10 @@ $\rightarrow$ Several algorithms which have been developed and tested for differ
 %\end{itemize}
 
 
+%The application is currently parametrised for building change, but vector data sources, aerial imagery sources, and change labels can all be customised in a configuration file, and thus can be changed for other types of features, such as land plots or road networks
 
+
+%\url{https://github.com/subdense/annotate}
 
 
 
