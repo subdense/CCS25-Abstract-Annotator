@@ -34,8 +34,10 @@
 %  - cases n*1-1 : propose links par default a modifier? ce cas au moins? (cf Germany, data identique, pas vraiment m-n)
 %  - modif de polygones a activer -> aussi annotation pour ML raster (et multimodal vecteur-raster?)
 %  - Q : handling of multipolygons? [splitted before generating datasets? needs to be checked!]
-
-
+%  - possibility to add a second annotation/correct existing ones?
+%  - distribution of tasks not random?
+%  - list olders datasets (active/archived)
+%  - admin interface to add datasets? -> other git repo with specific rights
 
 
 % mini abstract 2000 caracs
@@ -187,7 +189,7 @@ $\rightarrow$ Need for a consistent, despite various GIS data qualities across c
 	
 	\bigskip
 	
-	$\rightarrow$ git-based dashboard to share knowledge and resources between different types of experts	\cite{bucher2024conceptualising}
+	$\rightarrow$ git-based dashboard to share knowledge and resources between different types of experts	\cite{bucher2025building}
 	
 	\bigskip
 	
@@ -272,7 +274,7 @@ $\rightarrow$ Need for large and specific ground-truth datasets (building layers
 
 \textbf{Research objective:}
 
-\textit{Design and develop a web application designed to annotate potential matching links between two vector dataset.}
+\textit{Design and develop a web application aimed at annotating potential matching links between two vector datasets.}
 
 
 }
@@ -289,7 +291,7 @@ $\rightarrow$ Need for large and specific ground-truth datasets (building layers
 	\item fully based on git and javascript: no database nor server management, automatically deployed through github pages
 	\item handles multi-user collaboration, with authentication given by writing rights on the git repository
 	\item provides a dashboard to summarise user progress and overall progress
-	\item allows annotation of two vector datasets, with aerial photographs being provided in the background for ground-truthing
+	\item allows annotating two vector datasets, with aerial photographs being provided in the background for ground-truthing
 \end{itemize}
 
 \smallskip
@@ -325,7 +327,7 @@ $\rightarrow$ Need for large and specific ground-truth datasets (building layers
   \includegraphics[width=0.65\linewidth]{figures/example_dortmund_nochange_stage2.png}
 \end{center}
 
-\textbf{Stage 1:} type of real word evolution (no change, construction, destruction, reconstruction, don't know), signal a quality issue and comment.
+\textbf{Stage 2:} type of real word evolution (no change, construction, destruction, reconstruction, don't know), signal a quality issue and comment.
 
 
 
@@ -348,8 +350,16 @@ $\rightarrow$ Need for large and specific ground-truth datasets (building layers
 %The application is open source and available at \url{https://github.com/subdense/annotate}.
 %We show an example of the application in Figure 1
 
-
 % git-based archi
+
+\begin{itemize}
+	\item Open source and deployed automatically on github pages \url{https://github.com/subdense/annotate}
+	\item Developped in scala, compiled into html/js with scalajs
+	\item Datasets (geojson) on their own git repository (access rights to handle user access, login in the app with github login/token)
+	\item git commands through the isomorphic-git library
+	\item Clone all data at login, one commit pushed for each annotation 
+\end{itemize}
+
 
 
 \end{frame}
@@ -360,23 +370,63 @@ $\rightarrow$ Need for large and specific ground-truth datasets (building layers
 
 %We currently deployed the application on samples within the functional urban areas of Strasbourg, France and Dortmund, Germany, as data quality issues are very different across countries (for example, French BDTopo had a specification change in 2015 leading to many geometry changes with polygon splits that do not correspond to real-world changes). We compare buildings between 2011 and 2021, for all buildings within 500m radius circles around 100 sampled points for each area. The annotation campaign is currently ongoing with several researchers experts on GIS data and urban densification.
 
+$\rightarrow$ pilot deployment of the application on samples (100 points, 500m radius to collect buildings), within functional urban areas of Strasbourg (FR) and Dortmund (DE), between 2011 and 2021; test of the app and first annotation by Subdense researchers (expertise on densification and with country data).
+
+\medskip
+
+\begin{center}
+	\includegraphics[width=\linewidth]{figures/example_construction.png}
+\end{center}
+
+\textit{Example of a construction in Strasbourg: 0-1 true link}
+
+% Demo? -> examples (avoid burden of login on presentation computer)
 
 
-
-% example and/or demo
 
 \end{frame}
+
+
+\begin{frame}{Example: reconstruction}
+\begin{center}
+	\includegraphics[width=\linewidth]{figures/example_reconstruction.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Example: comment}
+\begin{center}
+	\includegraphics[width=\linewidth]{figures/example_comment.png}
+\end{center}
+\end{frame}
+
+\begin{frame}{Example: issue with type of link}
+\begin{center}
+	\includegraphics[width=\linewidth]{figures/example_whichlink.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Example: missing data}
+\begin{center}
+	\includegraphics[width=\linewidth]{figures/example_missingdata.png}
+\end{center}
+\end{frame}
+
 
 
 \begin{frame}{Work in progress: algorithm optimisation}
 
 %First results to optimise algorithms (in the sense of F-score for real-world change prediction) with partial ground-truth datasets were obtained for the same algorithms studied by \cite{guardiola2024optimising} (the Multi-criteria matching algorithm and the Geometric Matching of Areas algorithm), and confirm previous results obtained with synthetic data, in particular that (i) each algorithm can be optimised to better perform in different urban form typologies (center, housing projects, suburbs); (ii) they can be combined into a multi-modelling approach for a better overall performance.
 
-%Our contribution thus provide a basis for a robust quantification of urban densification at the building level, and a generic web application to annotate vector datasets in a comparative way.
+$\rightarrow$ Multi-modelling matching algorithm by \cite{guardiola2024optimising} integrate into the OpenMOLE platform.
 
-% WIP optim with OpenMOLE
-% $\rightarrow$ work in progress: large annotation campaign for the 6 case study cities in the 3 countries
+\medskip
 
+$\rightarrow$ Optimise algorithm parameters for F-score on expected type of link for each annotation cluster, with a NSGA2 genetic algorithm.
+
+\medskip
+
+$\rightarrow$ Preliminary results: algorithm can be fine-tuned to different urban typologies (center, housing projects, suburbs); multi-modelling algorithm has better performance than each separately.
 
 \end{frame}
 
@@ -386,41 +436,39 @@ $\rightarrow$ Need for large and specific ground-truth datasets (building layers
 
 \sframe{Perspectives}{
 
-% pymatch lib
-% ground truth datasets to be published
-% optimise combined algo - benchmark systematically with others
+%Our contribution thus provide a basis for a robust quantification of urban densification at the building level, and a generic web application to annotate vector datasets in a comparative way.
 
 \footnotesize
-%
-%\textbf{Contributions: }
-%\begin{itemize}
-%	\item a benchmark of algorithms \cite{guardiola2024benchmarking}
-%	\item a new algorithm combining GMoA and MCA \cite{guardiola2024optimising}
-%	\item open source python library \url{https://github.com/umrlastig/pymatch}
-%	\item web app to annotate links \url{https://github.com/subdense/annotate}
-%\end{itemize}
 
-%\textbf{Work in progress: } % aka necessary for solid paper
+\textbf{Contributions: }
+\begin{itemize}
+	\item Web app to annotate matching links
+	\item Proof-of-concept of a ``serverless'' deployment with user input through git
+\end{itemize}
 
-%\begin{itemize}
-%	\item annotation campaign to produce a large scale ground-truth dataset
-%	\item optimisation using the ground truth in OpenMOLE
-%	\item systematic exploration and validation using the synthetic data generator
-%	\item include other matching algorithms in the benchmark % at least one well established in the literature
-%\end{itemize}
+\textbf{Work in progress: }
 
-%\textbf{Perspectives: }
-
-%\begin{itemize}
-%	\item extension to line and points matching algorithms
-%	\item use for data quality issues
-%\end{itemize}
-
+\begin{itemize}
+	\item integrate feedback from first tests
+	\item generate consistent samplings (commuting FUAs) on all 6 studied areas
+	\item annotation campaign to produce a ``large scale'' ground-truth dataset
+	\item matching algorithm optimisation using the ground-truth in OpenMOLE
+	\item optimisation on change detection
+\end{itemize}
 
 %The application is currently parametrised for building change, but vector data sources, aerial imagery sources, and change labels can all be customised in a configuration file, and thus can be changed for other types of features, such as land plots or road networks
 
 
-%\url{https://github.com/subdense/annotate}
+\textbf{Perspectives: }
+
+\begin{itemize}
+	\item More precise annotation of links (complicated cases: n-m links e.g.)
+	\item More generic and configurable application: annotate raster data, other polygonal data (land plots), lines vector data, etc.
+	\item Use for data quality issues
+\end{itemize}
+
+
+
 
 
 
